@@ -41,3 +41,7 @@ Thumbs.db
 *.log
 *.tmp
 
+# Clacky-specific ignores
+*.clacky
+logs/
+temp/
