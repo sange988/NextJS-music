@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     let src = `${file.name}`
     let coverImgUrl = `${cover.name}`
     // console.log(src,coverImgUrl)
-
+//http://localhost:8080
     let music = await saveMusic(
         data.get('title'), data.get('singer'), src, coverImgUrl
     )
