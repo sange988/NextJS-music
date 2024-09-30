@@ -40,11 +40,13 @@ export async function POST(request: NextRequest) {
     console.log(`open ${path2} to see the uploaded file`)
 
     // 存入sqlite
-    let baseUrl = 'http://localhost:8080'
-    let src = `${baseUrl}/audio/${file.name}`
-    let coverImgUrl = `${baseUrl}/cover/${cover.name}`
+    // let baseUrl = 'http://localhost:8080'
+    // let src = `${baseUrl}/audio/${file.name}`
+    // let coverImgUrl = `${baseUrl}/cover/${cover.name}`
+    let src = `${file.name}`
+    let coverImgUrl = `${cover.name}`
     // console.log(src,coverImgUrl)
-
+//http://localhost:8080
     let music = await saveMusic(
         data.get('title'), data.get('singer'), src, coverImgUrl
     )

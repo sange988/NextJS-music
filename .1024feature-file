@@ -16,3 +16,6 @@ fileChangeLogs:
   - public/audio/Snipaste_2024-08-12_15-32-05.png
   - public/cover/Snipaste_2024-08-12_16-01-30.png
   - lib/music.js
+  - prisma/migrations/20240930033608_y
+  - prisma/migrations/20240930033608_y/migration.sql
+  - app/api/audio/route.ts

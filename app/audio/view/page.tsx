@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-
 const MusicDataPage = () => {
     const [musicData, setMusicData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -17,6 +16,7 @@ const MusicDataPage = () => {
                 const data = await response.json();
                 setMusicData(data.musics);
             } catch (error) {
+                console.error('Failed to fetch audio data:', error);
                 setError(error);
             } finally {
                 setLoading(false);
@@ -37,6 +37,11 @@ const MusicDataPage = () => {
                 <li key={track.id}>
                     <h2>{track.title}</h2>
                     <p>{track.artist}</p>
+                    <audio id={`audio-${track.id}`} controls>
+                        <source src={track.audioUrl} type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
+                    <button onClick={() => document.getElementById(`audio-${track.id}`).play()}>Play</button>
                 </li>
             ))}
             </ul>
