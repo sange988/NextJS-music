@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     console.log(`open ${path2} to see the uploaded file`)
 
     // 存入sqlite
-    // let baseUrl = 'https://82db5aaf7a7038e604799a3e41f5e444-app.staging.clackypaas.com'
+    // let baseUrl = 'http://localhost:8080'
     // let src = `${baseUrl}/audio/${file.name}`
     // let coverImgUrl = `${baseUrl}/cover/${cover.name}`
     let src = `${file.name}`
