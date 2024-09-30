@@ -45,3 +45,6 @@ Thumbs.db
 *.clacky
 logs/
 temp/
+/public/cover/
+/public/audio/
+/prisma/migrations/
