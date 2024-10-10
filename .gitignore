@@ -41,10 +41,5 @@ Thumbs.db
 *.log
 *.tmp
 
-# Clacky-specific ignores
-*.clacky
-logs/
-temp/
-/public/cover/
-/public/audio/
-/prisma/migrations/
+/public/audio
+/public/cover
