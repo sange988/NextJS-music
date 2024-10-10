@@ -43,3 +43,30 @@ Thumbs.db
 
 /public/audio/*
 /public/cover/*
+# Clacky environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Specific language files
+*.pem
+*.log
+*.lock
+package-lock.json
+pnpm-lock.yaml
+
+/public/audio/*
+/public/cover/*
+.pnpm-store/
