@@ -41,5 +41,5 @@ Thumbs.db
 *.log
 *.tmp
 
-/public/audio
-/public/cover
+/public/audio/
+/public/cover/
