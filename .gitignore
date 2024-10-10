@@ -40,3 +40,6 @@ Thumbs.db
 .vscode/
 *.log
 *.tmp
+
+/public/audio/*
+/public/cover/*
