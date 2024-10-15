@@ -1,9 +1,14 @@
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background-color: lightyellow;
+}
+
+.home-page {
+  background-color: #d3d3d3;
 }
 
 button {
