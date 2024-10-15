@@ -23,3 +23,13 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({list, mids, musics})
 }
+
+// 新增功能: 添加特定操作
+export async function POST(req: NextRequest) {
+    const body = await req.json();
+    // 处理请求体，添加自定义逻辑
+    console.log("Received POST request with body:", body);
+
+    // 示例: 返回请求体
+    return NextResponse.json({ received: body });
+}
