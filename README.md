@@ -1,13 +1,12 @@
 
 测试数据
 
-npx prisma migrate dev
+npx prisma migrate dev # 该命令用于使用Prisma工具执行数据库迁移。
 
 
 test + 1
 
 test
-
 nix-env -iA nixpkgs.mysql80
 mysql -u root -p -h 30.0.6.219 -P 33151
 
