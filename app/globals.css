@@ -9,6 +9,11 @@ body {
   animation: rotate 10s linear infinite;
 }
 
+.home-page {
+  background-color: cyan;
+  background-size: cover;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -38,6 +43,12 @@ button {
   border: 2px solid #000; /* Black border with 2px thickness */
   padding: 8px; /* Add some padding inside the fields */
   border-radius: 4px; /* Slightly rounded corners */
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    background-color: lightcyan;
+  }
 }
 
 /* Flashing Billboard Effect */
