@@ -1,0 +1,10 @@
+<Output>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="black" />
+  <circle cx="100" cy="100" r="50" fill="white" />
+  <circle cx="100" cy="50" r="25" fill="black" />
+  <circle cx="100" cy="150" r="25" fill="white" />
+  <path d="M0,100 A100,100 0 0,1 200,100 A100,100 0 0,1 0,100" fill="black" />
+  <path d="M0,100 A100,100 0 0,0 200,100 A100,100 0 0,0 0,100" fill="white" />
+</svg>
+</Output>

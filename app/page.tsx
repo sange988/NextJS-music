@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import FlashingBillboard from './components/FlashingBillboard';
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
@@ -54,6 +55,14 @@ export default function Home() {
             你的笑，藏着烟雨的霖。
         </p>
       </div>
+      <Image
+        src="/images/taichi.svg"
+        alt="Tai Chi Symbol"
+        layout="fill"
+        objectFit="cover"
+        className="animate-rotate"
+        style={{ zIndex: '-1' }}
+      />
     </FlashingBillboard>
       
       <button 
