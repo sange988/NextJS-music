@@ -27,3 +27,20 @@ button {
   padding: 8px; /* Add some padding inside the fields */
   border-radius: 4px; /* Slightly rounded corners */
 }
+
+/* Flashing Billboard Effect */
+@keyframes flashing {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.flashing-billboard {
+  animation: flashing 3s infinite;
+  font-size: 2rem;
+  text-align: center;
+  color: #ff5733; /* Color for the flashing text */
+}
