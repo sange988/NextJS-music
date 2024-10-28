@@ -33,11 +33,11 @@ const MusicDataPage = () => {
         <div>
             <h1>Music Data</h1>
             <ul>
-            {Array.isArray(musicData) && musicData.map((track) => (
+            {musicData.map((track) => (
                 <li key={track.id}>
                     <h2>{track.title}</h2>
                     <p>{track.artist}</p>
-                    <audio id={`audio-${track.id}`} controls>
+                    <audio controls>
                         <source src={track.audioUrl} type="audio/mpeg" />
                         Your browser does not support the audio element.
                     </audio>
