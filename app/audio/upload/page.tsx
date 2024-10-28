@@ -10,6 +10,8 @@ export default function UploadAudioPage() {
     const [singer, setSinger] = useState('')
     // 歌曲名
     const [title, setTitle] = useState('')
+    // 歌曲历史
+    const [history, setHistory] = useState('')
     // 上传是否成功
     const [success, setSuccess] = useState(false)
 
@@ -18,6 +20,7 @@ export default function UploadAudioPage() {
         setSinger('')
         setCover(undefined)
         setFile(undefined)
+        setHistory('')
     }
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -39,6 +42,7 @@ export default function UploadAudioPage() {
             data.set('cover', cover)
             data.set('title', title)
             data.set('singer', singer)
+            data.set('history', history)
 
             const res = await fetch('/api/audio', {
                 method: 'POST',
@@ -73,7 +77,7 @@ export default function UploadAudioPage() {
                        onChange={(e) => setSinger(e.target.value)}
                        name={'singer'} value={singer}/>
             </div>
-            <div className={'flex flex-row gap-2'}>
+<div className={'flex flex-row gap-2'}>
                 <label htmlFor="file">歌曲</label>
                 <input type="file" name={'file'}
                        onChange={(e) => setFile(e.target.files?.[0])}/>
@@ -85,6 +89,12 @@ export default function UploadAudioPage() {
                            // console.log(e.target.files)
                            setCover(e.target.files?.[0])
                        }}/>
+            </div>
+            <div className={'flex flex-row gap-2'}>
+                <label htmlFor="history">歌曲历史</label>
+                <input className={'px-1 history-field'} type="text"
+                       onChange={(e) => setHistory(e.target.value)}
+                       name={'history'} value={history}/>
             </div>
             <input className={'bg-green-300 p-3 rounded-lg'} type="submit" value="Upload"/>
         </form>
