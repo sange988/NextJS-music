@@ -42,7 +42,9 @@ Thumbs.db
 *.log
 *.tmp
 
-# Clacky Env Files
+# Clacky-related Configuration
+!.1024
+.1024*
 .1024.nix
 .1024nix
 .1024feature-file
