@@ -10,8 +10,8 @@ export default function Home() {
   const [key, setKey] = useState('');
   const [value, setValue] = useState('');
 
-  const handleClick = () => {
-    router.push('/audio/upload');
+const handleClick = () => {
+    router.push('/todo');
   };
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
@@ -65,7 +65,7 @@ export default function Home() {
       />
     </FlashingBillboard>
       
-      <button 
+<button 
         onClick={handleClick} 
         style={{ 
           backgroundColor: 'blue', 
@@ -73,10 +73,24 @@ export default function Home() {
           height: '100px',
           fontSize: '16px',
           cursor: 'pointer',
-          marginBottom: '400px' 
+          marginBottom: '20px' 
         }}
       >
         page jump
+      </button>
+
+      <button 
+        onClick={handleClick} 
+        style={{ 
+          backgroundColor: 'green', 
+          width: '200px', 
+          height: '100px',
+          fontSize: '16px',
+          cursor: 'pointer',
+          marginBottom: '400px' 
+        }}
+      >
+        Todo App
       </button>
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
